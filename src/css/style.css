@@ -26,12 +26,30 @@
 }
 
 .specs .diagram line,
-.specs .diagram .furniture {
+.specs .diagram polygon {
   stroke: var(--text);
 }
 
-.specs .diagram .furniture {
+.specs .diagram polygon {
+  stroke-linejoin: round;
+}
+
+.specs .diagram .top {
   fill: var(--accent-bg);
+}
+
+.specs .diagram .side {
+  fill: var(--text);
+  fill-opacity: 0.10;
+}
+
+.specs .diagram .leg {
+  stroke-width: 7;
+  stroke-linecap: butt;
+}
+
+.specs .diagram .lead {
+  stroke-dasharray: 3 3;
 }
 
 .specs .diagram text {
