@@ -6,6 +6,56 @@
     margin: 2rem 0;
   }
 
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0 2rem;
+}
+
+.specs .diagram {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.specs .diagram line,
+.specs .diagram .furniture {
+  stroke: var(--text);
+}
+
+.specs .diagram .furniture {
+  fill: var(--accent-bg);
+}
+
+.specs .diagram text {
+  fill: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.specs dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.3rem 1rem;
+  align-content: center;
+}
+
+.specs dt {
+  font-weight: bold;
+}
+
+.specs dd {
+  margin: 0;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
