@@ -5,16 +5,28 @@
     <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muebles para regalar</title>
+    <title>Regalar</title>
 </head>
 <body>
   <header>
-    <h1>Muebles para regalar</h1>
+    <h1>Regalar</h1>
+    <p>Artículos disponibles para regalar.</p>
+    <nav class="top-nav">
+      <a href="index.html">Regalar</a>
+      <a href="venta.html">Venta</a>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Mesa 1</h2>
+    <section id="regalar">
+      <h2>Regalar</h2>
+      <div class="section-index">
+        <a href="#mesa1">Mesa 1</a>
+        <a href="#mesa2">Mesa 2</a>
+        <a href="#silla1">Silla 1</a>
+      </div>
+      <section id="mesa1">
+        <h3>Mesa 1</h3>
       <div class="specs">
         <svg class="diagram" viewBox="0 0 330 250" role="img"
              aria-label="Mesa 1 en vista isométrica: 160 cm de largo, 80 cm de fondo y 72 cm de alto">
@@ -80,7 +92,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="mesa2">
       <h2>Mesa 2</h2>
       <div class="specs">
         <svg class="diagram" viewBox="0 0 330 250" role="img"
@@ -153,7 +165,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="silla1">
       <h2>Silla 1</h2>
       <div class="gallery">
         <figure>
@@ -188,6 +200,7 @@
         </figure>
       </div>
     </section>
+  </section>
   </main>
 
   <footer>
